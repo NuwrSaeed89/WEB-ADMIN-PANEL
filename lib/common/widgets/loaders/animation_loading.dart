@@ -1,0 +1,69 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:brother_admin_panel/utils/constants/color.dart';
+import 'package:brother_admin_panel/utils/constants/image_strings.dart';
+import 'package:brother_admin_panel/utils/constants/sizes.dart';
+import 'package:brother_admin_panel/utils/helpers/helper_functions.dart';
+import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
+
+class TAnimationLoaderWidget extends StatelessWidget {
+  const TAnimationLoaderWidget({
+    Key? key,
+    required this.text,
+    required this.animation,
+    this.showAction = false,
+    this.actionText,
+    this.onActionPressed,
+  }) : super(key: key);
+
+  final String text;
+  final String animation;
+  final bool showAction;
+  final String? actionText;
+  final VoidCallback? onActionPressed;
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            // Lottie.network(
+            //     'https://raw.githubusercontent.com/xvrh/lottie-flutter/master/example/assets/Mobilo/A.json'),
+
+            Lottie.asset(TImages.proccessLottie,
+                width: THelperFunctions.screenwidth() * 0.5),
+            const SizedBox(
+              height: TSizes.defaultSpace,
+            ),
+            Text(
+              text,
+              style: Theme.of(context).textTheme.bodyMedium,
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(
+              height: TSizes.defaultSpace,
+            ),
+            showAction
+                ? SizedBox(
+                    width: 250,
+                    child: OutlinedButton(
+                        onPressed: onActionPressed,
+                        style: OutlinedButton.styleFrom(
+                            backgroundColor: TColors.dark),
+                        child: Text(
+                          actionText!,
+                          style: Theme.of(context)
+                              .textTheme
+                              .headlineSmall!
+                              .apply(color: TColors.light),
+                        )),
+                  )
+                : const SizedBox(),
+          ],
+        ),
+      ),
+    );
+  }
+}

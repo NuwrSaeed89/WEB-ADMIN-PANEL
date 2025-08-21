@@ -1,0 +1,92 @@
+name: brother_admin_panel
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  #cached_network_image: any
+  clipboard: ^0.1.3
+
+  connectivity_plus: ^5.0.2
+  cupertino_icons: ^1.0.2
+  data_table_2: ^2.5.18
+  firebase_auth: ^5.6.0
+  firebase_core: ^3.14.0
+  firebase_storage: ^12.3.7
+  cloud_firestore: ^5.6.0
+  js: ^0.6.7
+
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  flutter_native_splash: ^2.3.7
+  flutter_typeahead:
+  get: ^4.6.5
+  get_storage: ^2.1.1
+  iconsax:
+  image_picker: ^1.0.7
+  intl: ^0.19.0
+  lottie: ^2.6.0
+  multi_select_flutter: any
+  shimmer: ^3.0.0
+  url_launcher: ^6.1.14
+  #cached_network_image: ^3.3.1
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    #assets\images\users\img.png
+    - assets/images/users/
+    #- assets/images/contents
+    #- assets/icons/payment_methods
+    - assets/fonts/
+    - assets/images/logos/
+
+  fonts:
+    - family: Urbanist
+      fonts:
+        - asset: assets\fonts\Urbanist\Urbanist-Light.ttf
+          weight: 300
+        - asset: assets\fonts\Urbanist\Urbanist-Regular.ttf
+          weight: 400
+        - asset: assets\fonts\Urbanist\Urbanist-Italic.ttf
+          style: italic
+        - asset: assets\fonts\Urbanist\Urbanist-Medium.ttf
+          weight: 500
+        - asset: assets\fonts\Urbanist\Urbanist-MediumItalic.ttf
+          style: italic
+          weight: 500
+        - asset: assets\fonts\Urbanist\Urbanist-SemiBold.ttf
+          weight: 600
+        - asset: assets\fonts\Urbanist\Urbanist-Bold.ttf
+          weight: 800
+    
+    - family: IBMPlexSansArabic
+      fonts:
+        - asset: assets/fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Light.ttf
+          weight: 300
+        - asset: assets/fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Bold.ttf
+          weight: 700
