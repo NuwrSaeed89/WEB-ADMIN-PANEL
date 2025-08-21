@@ -33,16 +33,13 @@ class PricesRequestScreen extends StatelessWidget {
                       onPressed: () {
                         // TODO: Create new price request
                       },
-                      icon: const Icon(Icons.request_quote),
-                      label: Text(
-                        'New Request',
-                        style: TTextStyles.buttonMedium.copyWith(
-                          color: Colors.white,
-                        ),
-                      ),
+                      icon: const Icon(Icons.add),
+                      label: const Text('New Request'),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF00d4ff),
+                        backgroundColor: const Color(0xFF0055ff),
                         foregroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 20, vertical: 12),
                       ),
                     ),
                   ],

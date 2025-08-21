@@ -3,6 +3,8 @@ import 'package:brother_admin_panel/routs/routs.dart';
 import 'package:brother_admin_panel/utils/themes/theme.dart';
 import 'package:brother_admin_panel/utils/controllers/theme_controller.dart';
 import 'package:brother_admin_panel/features/dashboard/controllers/dashboard_controller.dart';
+import 'package:brother_admin_panel/localization/language_controller.dart';
+import 'package:brother_admin_panel/localization/translations.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -30,6 +32,12 @@ class App extends StatelessWidget {
       themeMode: ThemeMode.system, // سيتم تحديثه بواسطة المتحكم
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
+      
+      // إعدادات الترجمة
+      translations: AppTranslations(),
+      locale: LanguageController.to.locale,
+      fallbackLocale: const Locale('en'),
+      
       getPages: TAppRoute.pages,
       initialRoute: TRoutes.login,
       unknownRoute: GetPage(

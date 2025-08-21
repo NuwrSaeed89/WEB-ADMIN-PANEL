@@ -33,16 +33,13 @@ class CategoriesScreen extends StatelessWidget {
                       onPressed: () {
                         // TODO: Add new category
                       },
-                      icon: const Icon(Icons.category),
-                      label: Text(
-                        'Add Category',
-                        style: TTextStyles.buttonMedium.copyWith(
-                          color: Colors.white,
-                        ),
-                      ),
+                      icon: const Icon(Icons.add),
+                      label: const Text('Add Category'),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF00d4ff),
+                        backgroundColor: const Color(0xFF0055ff),
                         foregroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 20, vertical: 12),
                       ),
                     ),
                   ],

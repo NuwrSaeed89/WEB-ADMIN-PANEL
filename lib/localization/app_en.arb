@@ -1,0 +1,82 @@
+{
+  "@@locale": "en",
+  "appTitle": "Brothers Creative",
+  "version": "ver 1.0.0",
+  
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "@version": {
+    "description": "Application version number"
+  },
+
+  "dashboard": "Dashboard",
+  "projectsTracker": "Projects Tracker",
+  "pricesRequest": "Prices Request",
+  "interviews": "Interviews",
+  "shoppingOrders": "Shopping Orders",
+  "categories": "Categories",
+  "products": "Products",
+  "blog": "Blog",
+  "gallery": "Gallery",
+  "banners": "Banners",
+  "settings": "Settings",
+
+  "dashboardContent": "Dashboard Content",
+  "projectsTrackerTitle": "Projects Tracker",
+  "pricesRequestTitle": "Prices Request",
+  "interviewsRequestsTitle": "Interviews Requests",
+  "shoppingOrdersTitle": "Shopping Orders",
+  "categoriesTitle": "Categories",
+  "productsTitle": "Products",
+  "blogTitle": "Blog Management",
+  "galleryTitle": "Studio Management",
+  "bannersTitle": "Banners Management",
+  "settingsTitle": "Settings",
+
+  "addPost": "Add Post",
+  "addCategory": "Add Category",
+  "addProduct": "Add Product",
+  "addBanner": "Add Banner",
+  "newProject": "New Project",
+  "newOrder": "New Order",
+  "scheduleInterview": "Schedule Interview",
+  "newRequest": "New Request",
+  "saveSettings": "Save Settings",
+
+  "totalPosts": "Total Posts",
+  "published": "Published",
+  "draft": "Draft",
+  "views": "Views",
+
+  "searchBlogPosts": "Search blog posts...",
+  "allCategories": "All Categories",
+  "technology": "Technology",
+  "design": "Design",
+  "business": "Business",
+
+  "blogPostTitle": "Blog Post Title",
+  "blogPostDescription": "This is a brief description of the blog post content. It provides an overview of what readers can expect...",
+  "comingSoon": "Coming Soon...",
+
+  "projectsTrackerDescription": "Track and manage your projects efficiently",
+  "categoriesDescription": "Manage product categories and classifications",
+  "productsDescription": "Manage your product catalog and inventory",
+  "bannersDescription": "Manage promotional banners and advertisements",
+  "studioDescription": "Manage studio projects and creative work",
+  "shoppingOrdersDescription": "Manage and track shopping orders",
+  "interviewsDescription": "Manage and schedule interview requests",
+  "pricesDescription": "Manage and track price requests from clients",
+  "settingsDescription": "Configure application settings and preferences",
+
+  "toggleToLightMode": "Switch to Light Mode",
+  "toggleToDarkMode": "Switch to Dark Mode",
+  "hideTabs": "Hide Tabs",
+  "showTabs": "Show Tabs",
+  "pressArrowToShowTabs": "Press arrow to show tabs",
+
+  "totalPostsValue": "24",
+  "publishedValue": "18",
+  "draftValue": "6",
+  "viewsValue": "1.2K"
+}

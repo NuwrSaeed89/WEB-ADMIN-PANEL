@@ -36,8 +36,10 @@ class ProjectsTrackerScreen extends StatelessWidget {
                       icon: const Icon(Icons.add),
                       label: const Text('New Project'),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF00d4ff),
+                        backgroundColor: const Color(0xFF0055ff),
                         foregroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 20, vertical: 12),
                       ),
                     ),
                   ],

@@ -12,185 +12,187 @@ class BlogScreen extends StatelessWidget {
       builder: (themeController) {
         final isDark = themeController.isDarkMode;
 
-        return Container(
-          padding: const EdgeInsets.all(24),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // Header
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    'Blog Management',
-                    style: TTextStyles.heading2.copyWith(
-                      color: isDark ? Colors.white : Colors.black87,
-                    ),
-                  ),
-                  ElevatedButton.icon(
-                    onPressed: () {
-                      // TODO: Add new blog post
-                    },
-                    icon: const Icon(Icons.add),
-                    label: const Text('Add Post'),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF0055ff),
-                      foregroundColor: Colors.white,
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 20, vertical: 12),
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 32),
-
-              // Stats Cards
-              Row(
-                children: [
-                  Expanded(
-                    child: _buildStatCard(
-                      title: 'Total Posts',
-                      value: '24',
-                      icon: Icons.article,
-                      color: Colors.blue,
-                      isDark: isDark,
-                    ),
-                  ),
-                  const SizedBox(width: 20),
-                  Expanded(
-                    child: _buildStatCard(
-                      title: 'Published',
-                      value: '18',
-                      icon: Icons.published_with_changes,
-                      color: Colors.green,
-                      isDark: isDark,
-                    ),
-                  ),
-                  const SizedBox(width: 20),
-                  Expanded(
-                    child: _buildStatCard(
-                      title: 'Draft',
-                      value: '6',
-                      icon: Icons.edit_note,
-                      color: Colors.orange,
-                      isDark: isDark,
-                    ),
-                  ),
-                  const SizedBox(width: 20),
-                  Expanded(
-                    child: _buildStatCard(
-                      title: 'Views',
-                      value: '1.2K',
-                      icon: Icons.visibility,
-                      color: Colors.purple,
-                      isDark: isDark,
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 32),
-
-              // Search and Filter
-              Row(
-                children: [
-                  Expanded(
-                    flex: 3,
-                    child: TextField(
-                      decoration: InputDecoration(
-                        hintText: 'Search blog posts...',
-                        hintStyle: TextStyle(
-                          color: isDark ? Colors.white54 : Colors.black54,
-                        ),
-                        prefixIcon: Icon(
-                          Icons.search,
-                          color: isDark ? Colors.white54 : Colors.black54,
-                        ),
-                        filled: true,
-                        fillColor:
-                            isDark ? Colors.white10 : Colors.grey.shade100,
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(12),
-                          borderSide: BorderSide.none,
-                        ),
-                        contentPadding: const EdgeInsets.symmetric(
-                            horizontal: 20, vertical: 16),
-                      ),
-                      style: TextStyle(
+        return SingleChildScrollView(
+          child: Container(
+            padding: const EdgeInsets.all(24),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Header
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Blog Management',
+                      style: TTextStyles.heading2.copyWith(
                         color: isDark ? Colors.white : Colors.black87,
                       ),
                     ),
-                  ),
-                  const SizedBox(width: 20),
-                  Expanded(
-                    child: DropdownButtonFormField<String>(
-                      value: 'All Categories',
-                      decoration: InputDecoration(
-                        filled: true,
-                        fillColor:
-                            isDark ? Colors.white10 : Colors.grey.shade100,
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(12),
-                          borderSide: BorderSide.none,
-                        ),
-                        contentPadding: const EdgeInsets.symmetric(
-                            horizontal: 20, vertical: 16),
+                    ElevatedButton.icon(
+                      onPressed: () {
+                        // TODO: Add new blog post
+                      },
+                      icon: const Icon(Icons.add),
+                      label: const Text('Add Post'),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color(0xFF0055ff),
+                        foregroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 20, vertical: 12),
                       ),
-                      dropdownColor:
-                          isDark ? const Color(0xFF1a1a2e) : Colors.white,
-                      style: TextStyle(
-                        color: isDark ? Colors.white : Colors.black87,
-                      ),
-                      items: [
-                        DropdownMenuItem(
-                            value: 'All Categories',
-                            child: Text(
-                              'All Categories',
-                              style: TextStyle(
-                                color: isDark ? Colors.white : Colors.black87,
-                              ),
-                            )),
-                        DropdownMenuItem(
-                            value: 'Technology',
-                            child: Text(
-                              'Technology',
-                              style: TextStyle(
-                                color: isDark ? Colors.white : Colors.black87,
-                              ),
-                            )),
-                        DropdownMenuItem(
-                            value: 'Design',
-                            child: Text(
-                              'Design',
-                              style: TextStyle(
-                                color: isDark ? Colors.white : Colors.black87,
-                              ),
-                            )),
-                        DropdownMenuItem(
-                            value: 'Business',
-                            child: Text(
-                              'Business',
-                              style: TextStyle(
-                                color: isDark ? Colors.white : Colors.black87,
-                              ),
-                            )),
-                      ],
-                      onChanged: (value) {},
                     ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 32),
+                  ],
+                ),
+                const SizedBox(height: 32),
 
-              // Blog Posts List
-              Expanded(
-                child: ListView.builder(
+                // Stats Cards
+                Row(
+                  children: [
+                    Expanded(
+                      child: _buildStatCard(
+                        title: 'Total News',
+                        value: '24',
+                        icon: Icons.article,
+                        color: Colors.blue,
+                        isDark: isDark,
+                      ),
+                    ),
+                    const SizedBox(width: 20),
+                    Expanded(
+                      child: _buildStatCard(
+                        title: 'Published',
+                        value: '18',
+                        icon: Icons.published_with_changes,
+                        color: Colors.green,
+                        isDark: isDark,
+                      ),
+                    ),
+                    const SizedBox(width: 20),
+                    Expanded(
+                      child: _buildStatCard(
+                        title: 'Draft',
+                        value: '6',
+                        icon: Icons.edit_note,
+                        color: Colors.orange,
+                        isDark: isDark,
+                      ),
+                    ),
+                    const SizedBox(width: 20),
+                    Expanded(
+                      child: _buildStatCard(
+                        title: 'Views',
+                        value: '1.2K',
+                        icon: Icons.visibility,
+                        color: Colors.purple,
+                        isDark: isDark,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 32),
+
+                // Search and Filter
+                Row(
+                  children: [
+                    Expanded(
+                      flex: 3,
+                      child: TextField(
+                        decoration: InputDecoration(
+                          hintText: 'Search blog posts...',
+                          hintStyle: TextStyle(
+                            color: isDark ? Colors.white54 : Colors.black54,
+                          ),
+                          prefixIcon: Icon(
+                            Icons.search,
+                            color: isDark ? Colors.white54 : Colors.black54,
+                          ),
+                          filled: true,
+                          fillColor:
+                              isDark ? Colors.white10 : Colors.grey.shade100,
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(12),
+                            borderSide: BorderSide.none,
+                          ),
+                          contentPadding: const EdgeInsets.symmetric(
+                              horizontal: 20, vertical: 16),
+                        ),
+                        style: TextStyle(
+                          color: isDark ? Colors.white : Colors.black87,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 20),
+                    Expanded(
+                      child: DropdownButtonFormField<String>(
+                        value: 'All Categories',
+                        decoration: InputDecoration(
+                          filled: true,
+                          fillColor:
+                              isDark ? Colors.white10 : Colors.grey.shade100,
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(12),
+                            borderSide: BorderSide.none,
+                          ),
+                          contentPadding: const EdgeInsets.symmetric(
+                              horizontal: 20, vertical: 16),
+                        ),
+                        dropdownColor:
+                            isDark ? const Color(0xFF1a1a2e) : Colors.white,
+                        style: TextStyle(
+                          color: isDark ? Colors.white : Colors.black87,
+                        ),
+                        items: [
+                          DropdownMenuItem(
+                              value: 'All Categories',
+                              child: Text(
+                                'All Categories',
+                                style: TextStyle(
+                                  color: isDark ? Colors.white : Colors.black87,
+                                ),
+                              )),
+                          DropdownMenuItem(
+                              value: 'Technology',
+                              child: Text(
+                                'Technology',
+                                style: TextStyle(
+                                  color: isDark ? Colors.white : Colors.black87,
+                                ),
+                              )),
+                          DropdownMenuItem(
+                              value: 'Design',
+                              child: Text(
+                                'Design',
+                                style: TextStyle(
+                                  color: isDark ? Colors.white : Colors.black87,
+                                ),
+                              )),
+                          DropdownMenuItem(
+                              value: 'Business',
+                              child: Text(
+                                'Business',
+                                style: TextStyle(
+                                  color: isDark ? Colors.white : Colors.black87,
+                                ),
+                              )),
+                        ],
+                        onChanged: (value) {},
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 32),
+
+                // Blog Posts List
+                ListView.builder(
                   itemCount: 10,
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
                   itemBuilder: (context, index) {
                     return _buildBlogPostCard(index);
                   },
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         );
       },

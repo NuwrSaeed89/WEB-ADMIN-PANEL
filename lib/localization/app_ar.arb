@@ -1,0 +1,82 @@
+{
+  "@@locale": "ar",
+  "appTitle": "براذرز كرياتيف",
+  "version": "الإصدار 1.0.0",
+  
+  "@appTitle": {
+    "description": "عنوان التطبيق"
+  },
+  "@version": {
+    "description": "رقم إصدار التطبيق"
+  },
+
+  "dashboard": "لوحة التحكم",
+  "projectsTracker": "متتبع المشاريع",
+  "pricesRequest": "طلب الأسعار",
+  "interviews": "المقابلات",
+  "shoppingOrders": "طلبات التسوق",
+  "categories": "الفئات",
+  "products": "المنتجات",
+  "blog": "المدونة",
+  "gallery": "المعرض",
+  "banners": "اللافتات",
+  "settings": "الإعدادات",
+
+  "dashboardContent": "محتوى لوحة التحكم",
+  "projectsTrackerTitle": "متتبع المشاريع",
+  "pricesRequestTitle": "طلب الأسعار",
+  "interviewsRequestsTitle": "طلبات المقابلات",
+  "shoppingOrdersTitle": "طلبات التسوق",
+  "categoriesTitle": "الفئات",
+  "productsTitle": "المنتجات",
+  "blogTitle": "إدارة المدونة",
+  "galleryTitle": "إدارة الاستوديو",
+  "bannersTitle": "إدارة اللافتات",
+  "settingsTitle": "الإعدادات",
+
+  "addPost": "إضافة منشور",
+  "addCategory": "إضافة فئة",
+  "addProduct": "إضافة منتج",
+  "addBanner": "إضافة لافتة",
+  "newProject": "مشروع جديد",
+  "newOrder": "طلب جديد",
+  "scheduleInterview": "جدولة مقابلة",
+  "newRequest": "طلب جديد",
+  "saveSettings": "حفظ الإعدادات",
+
+  "totalPosts": "إجمالي المنشورات",
+  "published": "منشور",
+  "draft": "مسودة",
+  "views": "المشاهدات",
+
+  "searchBlogPosts": "البحث في منشورات المدونة...",
+  "allCategories": "جميع الفئات",
+  "technology": "التكنولوجيا",
+  "design": "التصميم",
+  "business": "الأعمال",
+
+  "blogPostTitle": "عنوان منشور المدونة",
+  "blogPostDescription": "هذا وصف مختصر لمحتوى منشور المدونة. يوفر نظرة عامة على ما يمكن للقراء توقعه...",
+  "comingSoon": "قريباً...",
+
+  "projectsTrackerDescription": "تتبع وإدارة مشاريعك بكفاءة",
+  "categoriesDescription": "إدارة فئات المنتجات والتصنيفات",
+  "productsDescription": "إدارة كتالوج المنتجات والمخزون",
+  "bannersDescription": "إدارة اللافتات الإعلانية والإعلانات",
+  "studioDescription": "إدارة مشاريع الاستوديو والعمل الإبداعي",
+  "shoppingOrdersDescription": "إدارة وتتبع طلبات التسوق",
+  "interviewsDescription": "إدارة وجدولة طلبات المقابلات",
+  "pricesDescription": "إدارة وتتبع طلبات الأسعار من العملاء",
+  "settingsDescription": "تكوين إعدادات التطبيق والتفضيلات",
+
+  "toggleToLightMode": "تبديل إلى الوضع الفاتح",
+  "toggleToDarkMode": "تبديل إلى الوضع الداكن",
+  "hideTabs": "إخفاء التاب",
+  "showTabs": "إظهار التاب",
+  "pressArrowToShowTabs": "اضغط على السهم لإظهار التاب",
+
+  "totalPostsValue": "24",
+  "publishedValue": "18",
+  "draftValue": "6",
+  "viewsValue": "1.2K"
+}

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class TTextStyles {
   // Font Family
-  static const String _fontFamily = 'IBMPlexSansArabic';
+  static const String _fontFamily = 'Urbanist'; //'IBMPlexSansArabic';
 
   // Heading Styles
   static TextStyle get heading1 => const TextStyle(

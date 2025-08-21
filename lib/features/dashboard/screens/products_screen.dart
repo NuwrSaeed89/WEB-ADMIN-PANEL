@@ -33,16 +33,13 @@ class ProductsScreen extends StatelessWidget {
                       onPressed: () {
                         // TODO: Add new product
                       },
-                      icon: const Icon(Icons.add_shopping_cart),
-                      label: Text(
-                        'Add Product',
-                        style: TTextStyles.buttonMedium.copyWith(
-                          color: Colors.white,
-                        ),
-                      ),
+                      icon: const Icon(Icons.add),
+                      label: const Text('Add Product'),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF00d4ff),
+                        backgroundColor: const Color(0xFF0055ff),
                         foregroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 20, vertical: 12),
                       ),
                     ),
                   ],

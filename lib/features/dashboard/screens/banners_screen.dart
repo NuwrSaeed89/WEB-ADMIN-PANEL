@@ -33,16 +33,13 @@ class BannersScreen extends StatelessWidget {
                       onPressed: () {
                         // TODO: Add new banner
                       },
-                      icon: const Icon(Icons.add_photo_alternate),
-                      label: Text(
-                        'Add Banner',
-                        style: TTextStyles.buttonMedium.copyWith(
-                          color: Colors.white,
-                        ),
-                      ),
+                      icon: const Icon(Icons.add),
+                      label: const Text('Add Banner'),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF00d4ff),
+                        backgroundColor: const Color(0xFF0055ff),
                         foregroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 20, vertical: 12),
                       ),
                     ),
                   ],
